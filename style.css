@@ -1,0 +1,33 @@
+@import "https://unpkg.com/open-props";
+
+body {
+  font-family: var(--font-sans);
+  margin: 0 auto;
+  width: 70%;
+}
+
+.example1, .example3 {
+ color: rgb(233, 202, 0);
+ color: color(display-p3 0.9 0.8 0.1);
+ background-color: rgb(112, 127, 144); 
+}
+
+.example2, .example4 {
+ background-color: rgb(233, 202, 0);
+ background-color: color(display-p3 0.9 0.8 0.1);
+ color: rgb(112, 127, 144); 
+}
+
+.example {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  place-items: center;
+  justify-content: center;
+}
+
+.example p {
+  font-size: var(--size-6)
+}

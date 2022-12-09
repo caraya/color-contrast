@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Color.JS Contrast tests</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Color.js Contrast Tests</h1>
+
+<p>Testing WCAG 2.1 and APAC contrast algorithms.</p>
+
+<h2>WCAG 2.1</h2>
+
+<div class="example example1">
+  <p id="example1-text"></p>
+</div>
+
+<div class="example example2">
+  <p id="example2-text"></p>
+</div>
+
+<p>The two color combinations above should not have the same value. However, The WCAG 2 algorithm gives both color combinations the same contrast value:</p>
+
+<h2>APAC</h2>
+
+<p>Unlike the WCAG 2.1 algorithm, APAC produces two differen values for the examples below:</p>
+
+<div class="example example3">
+  <p id="example3-text"></p>
+</div>
+
+<p>Lorem Ipsum</p>
+
+<div class="example example4">
+  <p id="example4-text"></p>
+</div>
+
+<!-- Load color.js from CDN -->
+<script src="https://colorjs.io/dist/color.global.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
